@@ -43,9 +43,6 @@ namespace ExcelEncountersAutofill
             string? line;
             while ((line = reader.ReadLine()) != null)
             {
-                // Assuming rows are like:
-                // John, Johnny/ Johnny
-                // where the first column (names) is separated by commas and the column delimiter is a semicolon.
                 string[] columns = line.Split('\t');
 
                 // Split the first column by comma.

@@ -19,7 +19,7 @@ namespace ExcelEncountersAutofill
         {
             // Get the directory where the exe is being executed.
             string currentDirectory = Directory.GetCurrentDirectory();
-            // You can adjust the search pattern if needed (for example, include .xls if necessary)
+
             string[] excelFiles = Directory.GetFiles(currentDirectory, "*.xlsx");
 
             if (excelFiles.Length == 0)
